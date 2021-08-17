@@ -1,0 +1,78 @@
+html{
+    /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+
+body{
+    width: 100%;
+    height: 200vh;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+
+    
+
+    .app{
+        width: 100vw;
+        position: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: lightblue;
+
+        .foto-gallery{
+            //background-color: white;
+            position: relative;
+            height: 33vh;
+            width: 100%;
+            bottom: 0;
+
+            .foto{
+                height: 100%;
+                position: absolute;
+            }
+
+            .test{
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                width: fit-content;
+                position: absolute;
+                padding: 0 100vw;
+                .img{
+                    height: 100%;
+                    width: 300px;
+                    margin: 0 50px;
+                    //background-color: green;
+
+                    img{
+                        height: 100%;
+                    }
+                }
+
+                &.top{
+                    //background-color: lightcoral;
+                    right: 0;
+                }
+
+                &.bottom{
+                    //background-color: aquamarine;
+                    //top: 50%;
+                }
+            }
+            
+        }
+    }
+
+    
+}

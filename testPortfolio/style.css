@@ -1,0 +1,16 @@
+.app {
+  background-color: red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.app .ball {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
